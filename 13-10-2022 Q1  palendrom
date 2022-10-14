@@ -6,14 +6,14 @@ class number{
     System.out.println("Enter the Number : ");	
 	num=sc.nextInt();
     temp=num;
-	while(num>0) {
+	while(num>0) {  //condition
 		rem=num%10;
 		rev=rev*10+rem;
 		num=num/10;
 	}
     }
 }
-class palandrom extends number{
+class palandrom extends number{ //derived another class
 	void display() {
 		if(temp==rev) {
 			System.out.println("The number "+ rev +" is Palandroma ");
